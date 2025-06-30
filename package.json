@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "nuxt-starter",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,7 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@nuxt/content": "^3.6.1",
@@ -16,7 +18,6 @@
     "@nuxt/icon": "^1.15.0",
     "@nuxt/image": "^1.10.0",
     "@nuxt/scripts": "^0.11.8",
-    "@nuxt/test-utils": "^3.19.1",
     "@nuxt/ui": "^3.2.0",
     "@unhead/vue": "^2.0.11",
     "eslint": "^9.30.0",
@@ -24,5 +25,11 @@
     "typescript": "^5.8.3",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.19.1",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.4"
   }
 }
